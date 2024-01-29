@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
+
 body {
     margin: 0;
+    background-color: lightgray;
 }
 
 nav {
@@ -16,7 +18,7 @@ nav {
 hr {
     border: 1px solid black;
     width: 100%;
-    margin: 0;
+    margin: 2px;
 }
 
 nav a {
@@ -44,6 +46,13 @@ nav button:hover {
     background-color: lightgray;
 }
 
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: crimson;
+}
+
 .title {
     background-color: lightgray;
     display: flex;
@@ -51,11 +60,6 @@ nav button:hover {
     flex-direction: column;
     padding: 25px;
     color: crimson;
-}
-
-.title h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 75px;
 }
 
 .title img {
@@ -136,6 +140,7 @@ nav button:hover {
     padding: 0px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    background-color: white;
 }
 
 .card img {
@@ -162,17 +167,58 @@ nav button:hover {
     grid-template-columns: auto auto;
 }
 
-.card dl div dt, .card dl div dd {
+.card form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card dl div dt, .card dl div dd{
     padding-bottom: 5px;
     margin: 0px;
 }
 
+.contact-info {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 75px;
+}
+
+.one-col {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.card form label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 10px;
+    margin: 50px;
+}
+
+#name, #email, #message {
+    width: 350px;
+    padding: 10px;
+    margin-right: 15px; 
+    font-size: 18px;
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+
+#submit {
+    margin: 15px;
+    padding: 20px;
+    width: 200px
+}
 
 footer {
     background-color: white;
     padding-top: 5px;
-    display: flex;
-    justify-content: center;
+    text-align: center;    
     color: white;
 }
 
